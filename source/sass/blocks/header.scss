@@ -1,0 +1,23 @@
+
+.header {
+  background-color: #ffffff;
+  padding: 12px 0px 0px 12px;
+  position: relative;
+}
+
+.header__logo-text {
+  display: none;
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 126px;
+    height: 32px;
+    color: var(--base-black, #333);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: 20px;
+    margin-top: 6px;
+  }
+}

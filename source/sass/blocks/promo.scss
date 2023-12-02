@@ -1,0 +1,112 @@
+.promo {
+  position: relative;
+  text-align: center;
+  margin-bottom: 64px;
+  background-color: #f3ebe1;
+
+  width: 100%;
+  height: 656px;
+  display: inline-flex;
+  justify-content: space-between;
+
+  @media (min-width: 767px) {
+    justify-content: space-between;
+    height: 640px;
+  }
+  @media (min-width: $desktop-width) {
+    height: 714px;
+  }
+}
+
+
+.promo__type {
+  color: var(--base-primary, #7859cf);
+  text-align: center;
+  font-size: 12px;
+  font-family: Montserrat;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.48px;
+  text-transform: uppercase;
+}
+
+
+.promo__price-container {
+  display: flex;
+  align-items: center;
+  line-height: 32px;
+  justify-content: center;
+  font-family: Montserrat;
+  font-size: 16px;
+  color: var(--base-primary, #7859cf);
+  gap: 10px;
+}
+
+.promo__price-old {
+  display: inline-flex;
+  align-items: flex-start;
+  text-decoration: line-through;
+}
+
+.promo__price-discount {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Montserrat;
+  color: #333333;
+}
+
+.promo__title {
+  flex: 1 0 0;
+  color: var(--base-black, #333);
+  text-align: center;
+  font-size: 36px;
+  font-family: Montserrat;
+  font-weight: 700;
+  letter-spacing: 0.72px;
+
+  @media (min-width: 767px) {
+    color: var(--base-black, #333);
+    font-family: Montserrat;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 1.12px;
+  }
+}
+
+.promo__text {
+  display: block;
+  align-content: center;
+  color: #000000;
+  text-align: center;
+  gap: 10px;
+  font-size: 14px;
+  font-family: Montserrat;
+  line-height: 20px;
+}
+
+.promo__item {
+  margin: 20px 40px 20px 40px;
+
+  @media (min-width: 767px) {
+    display: flex;
+    width: 608px;
+    height: 640px;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 500px;
+  }
+  @media (min-width: $desktop-width) {
+    position: inherit;
+    top: 0px;
+    margin-right: 100px;
+  }
+}
+

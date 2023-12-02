@@ -1,0 +1,41 @@
+/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  //position: relative;
+  width: 100%;
+  //display: grid;
+  min-width: 320px;
+
+  font-size: 15px;
+  line-height: 30px;
+  font-family: $fonts;
+  color: #444444;
+
+  //grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+
+
+img {
+  max-width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
